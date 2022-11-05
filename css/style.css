@@ -1,0 +1,50 @@
+html{
+    background-color: black;
+}
+
+html h1{
+    font-size: 17px;
+}
+
+html small{
+    font-size: 12px;
+}
+
+html p, html textarea{
+    font-size: 14px;
+}
+
+p, h1, h2, h3, h4, h5, h6, small{
+    cursor: default;
+}
+
+
+.anim-text{
+    animation-name: example;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes example {
+    0%   {transform: translateY(0.5rem);}
+    50%  {transform: translateY(-0.5rem);}
+    75%  {transform: translateY(0.5rem);}
+    100%  {transform: translateY(-0.5rem);}
+}
+
+
+
+@media screen and (max-width: 700px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+
